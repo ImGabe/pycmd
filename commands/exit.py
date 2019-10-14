@@ -6,4 +6,4 @@ def run(args: list) -> None:
 
 
 def help() -> str:
-    return "Quit te program."
+    return "Exit the program."
