@@ -9,4 +9,5 @@ def run(args: list) -> None:
     voice.speak(args)
 
 
-def help() -> str: return "Say anything."
+def help() -> str:
+    return "Say anything."
