@@ -22,4 +22,5 @@ def run(args: list) -> None:
         print(f"{currentFile.stem}:\t{import_module(module).help()}")
 
 
-def help() -> str: return "Description of commands."
+def help() -> str:
+    return "Description of commands."
