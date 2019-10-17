@@ -19,7 +19,10 @@ def run(args: list) -> None:
 
     for currentFile in currentDirectory.glob("*.py"):
         module = ".".join(currentFile.parts)[:-3]
-        print(f"{currentFile.stem}:\t{import_module(module).help()}")
+        name = currentFile.stem
+        description = import_module(module).help()
+
+        print(f"{name + ':':<20}{description}")
 
 
 def help() -> str:
